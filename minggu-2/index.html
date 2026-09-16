@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Maumere — Flores, NTT</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header,
+    main,
+    footer {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    a:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #000;
+      outline-offset: 3px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    form {
+      max-width: 500px;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+      padding-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Kota Maumere, Flores — Nusa Tenggara Timur</h1>
+
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang Kota</a>
+      <a href="#wisata">Tempat Wisata</a>
+      <a href="#pesan">Kirim Pesan</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <article id="tentang">
+      <h2>Tentang Kota Maumere</h2>
+
+      <p>
+        Maumere adalah ibu kota Kabupaten Sikka, Pulau Flores, NTT.
+        Terkenal dengan pantai yang indah, air jernih, dan masyarakat
+        yang ramah. Budaya serta kerajinan tenun ikat diwariskan
+        turun-temurun.
+      </p>
+
+      <img
+        src="pantai.jpg"
+        alt="Pemandangan Pantai Koka, Maumere, Flores, NTT"
+        aria-label="Pemandangan Pantai Koka">
+    </article>
+
+    <section id="wisata">
+      <h2>Tempat Wisata</h2>
+
+      <p>
+        Pantai Koka adalah salah satu tempat indah di Maumere.
+        Selain itu ada Pantai Waiara, Pulau Pungil, dan dekat dengan
+        Danau Kelimutu. Warga hidup dari laut, pertanian, dan tenun ikat.
+      </p>
+    </section>
+
+    <section id="pesan" aria-labelledby="judul-pesan">
+      <h2 id="judul-pesan">Kirim Pesan</h2>
+
+      <form
+        action="#"
+        method="post"
+        aria-labelledby="judul-pesan">
+
+        <div>
+          <label for="nama_lengkap">Nama lengkap</label>
+          <input
+            id="nama_lengkap"
+            name="nama_lengkap"
+            type="text"
+            autocomplete="name"
+            required
+            aria-required="true">
+        </div>
+
+        <div>
+          <label for="email">Alamat email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            aria-required="true">
+        </div>
+
+        <div>
+          <label for="pesan_saran">Pesan atau saran</label>
+          <textarea
+            id="pesan_saran"
+            name="pesan_saran"
+            autocomplete="off"
+            minlength="10"
+            required
+            aria-required="true"
+            aria-describedby="bantuan-pesan"></textarea>
+
+          <small id="bantuan-pesan">
+            Pesan harus berisi minimal 10 karakter.
+          </small>
+        </div>
+
+        <button type="submit">Kirim pesan</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Dibuat oleh Maria Mensiana Boa — Teknik Sistem Informasi,
+      Universitas Katolik Widya Karya Malang
+    </p>
+  </footer>
+
+</body>
+</html>
