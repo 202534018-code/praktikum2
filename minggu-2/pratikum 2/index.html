@@ -1,0 +1,106 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Perkenalan Diri</h1>
+
+        <nav aria-label="Navigasi utama">
+            <a href="#profil">Profil</a>
+            <a href="#hobi">Hobi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+
+       <article id="profil">
+            <h2>Profil Saya</h2>
+
+            <img src="cece.jpeg" alt="Foto diri saya">
+
+            <p>
+             Halo, nama saya Maria. Saya adalah mahasiswa Sistem Informasi.
+            Saya sedang belajar membuat website menggunakan HTML.
+            </p>
+        </article>
+
+        <section id="hobi">
+            <h2>Hobi dan Minat</h2>
+
+            <p>
+                Beberapa hal yang saya sukai adalah belajar,
+                menggunakan komputer, dan mempelajari teknologi.
+            </p>
+
+            <ul>
+                <li>Belajar teknologi</li>
+                <li>Membuat website</li>
+                <li>Mendengarkan musik</li>
+            </ul>
+        </section>
+
+        <section id="kontak">
+            <h2>Kirim Pesan</h2>
+
+            <form action="#" method="post">
+
+                <div>
+                    <label for="nama">Nama lengkap</label>
+                    <input
+                        id="nama"
+                        name="nama"
+                        type="text"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Alamat email</label>
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="pesan">Pesan</label>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        minlength="10"
+                        required
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Kirim Pesan</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
