@@ -142,3 +142,12 @@ button:focus-visible {
   outline: 3px solid var(--color-focus);
   outline-offset: 3px;
 }
+/* TEST CASCADE - HANYA UNTUK BUKTI */
+
+p {
+  color: green;
+}
+
+.card p {
+  color: purple;
+}
